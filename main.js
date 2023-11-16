@@ -6,7 +6,7 @@ async function  ObterCep () {
  const response = await fetch(`https://viacep.com.br/ws/${search}/json/`, options)
 .then((response) => response.json())
 
-    // console.log(response);
+    console.log(response);
     ExibirDados(response);
     
 };
@@ -16,8 +16,6 @@ const options = {
   mode: 'cors',
   Cache: 'default',
 }
-
-
 
 function ExibirDados (response){
   document.getElementById('logradouro').innerHTML = response.logradouro;

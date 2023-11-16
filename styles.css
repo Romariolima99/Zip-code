@@ -1,16 +1,12 @@
 
 
-
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: radial-gradient(circle at 0% 0%, #ffffff 0, #ffffff 16.67%, #fff8fa 33.33%, #eaeaea 50%, #d3dcd9 66.67%, #bfd0c9 83.33%, #adc4ba 100%);
-    height: 100vh;
-  
-    
+    height: 100vh; 
 }
-
 
 .itens{
 
@@ -23,3 +19,11 @@
     font-size: 40px;
     padding-bottom: 50px;
 }
+
+@media(min-width:320px) and (max-width:900px) {
+    .itens{
+       width: 100%;
+       height: 50vh;
+       font-size: 25px;
+    }
+ }
