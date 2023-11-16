@@ -20,6 +20,39 @@
     padding-bottom: 50px;
 }
 
+
+.btn-consultar {
+	box-shadow:inset 0px 1px 0px 0px #c2ed9c;
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+.btn-consultar:hover {
+	background-color:#5cb811;
+}
+.btn-consultar:active {
+	position:relative;
+	top:1px;
+}
+
+.input-cep{
+  width:40%;
+  height:30px;
+  border-radius: 10px;
+}
+
+        
+
+
 @media(min-width:320px) and (max-width:900px) {
     .itens{
        width: 100%;
