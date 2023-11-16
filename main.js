@@ -18,10 +18,10 @@ const options = {
 }
 
 function ExibirDados (response){
-  document.getElementById('logradouro').innerHTML = response.logradouro;
-  document.getElementById('complemento').innerHTML = response.complemento;
-  document.getElementById('bairro').innerHTML = response.bairro;
-  document.getElementById('localidade').innerHTML = response.localidade;
+  document.getElementById('logradouro').innerHTML = "logradouro: " + response.logradouro;
+  document.getElementById('bairro').innerHTML = "Bairro: " + response.bairro;
+  document.getElementById('localidade').innerHTML = "Localidade: " + response.localidade;
+  document.getElementById('ibge').innerHTML = "Numero ibge: " + response.ibge;
 
 
 
