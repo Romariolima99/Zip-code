@@ -10,15 +10,18 @@ async function  ObterCep () {
   return;
  }
 
- const response = await fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+ await fetch(`https://viacep.com.br/ws/${search}/json/`, options)
 .then((response) => response.json()) 
 .then((data) => { 
+ 
   ExibirDados(data);
 })
-.catch((error) => {
-  if (error === true) {
+.catch((data) => {
+  if (data.erro === true) {
     alert("cep invalido")
+    return;
    }
+
 });
 }
 
