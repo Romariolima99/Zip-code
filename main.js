@@ -13,12 +13,16 @@ async function  ObterCep () {
  await fetch(`https://viacep.com.br/ws/${search}/json/`, options)
 .then((response) => response.json()) 
 .then((data) => { 
- 
+  console.log(data); // console.log fora do if
+  if (data.erro === true) {
+  alert("cep invalido")
+  }
   ExibirDados(data);
 })
-.catch((data) => {
-  if (data.erro === true) {
-    alert("cep invalido")
+.catch((erro) => {
+  console.log(erro) // console.log fora do if
+  if (data.erro === 400) {
+    alert("não foi possivel concluir a solicitação")
     return;
    }
 
