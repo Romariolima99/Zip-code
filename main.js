@@ -5,7 +5,7 @@ async function ObterCep() {
   let search = cep.value.replace("-", "")
 
   if (search.length > 8) {
-    alert("informe uma quntidade de numeros validos")
+    alert("Quantidade de numeros Invalidos")
     return;
   }
 
@@ -19,6 +19,7 @@ async function ObterCep() {
       ExibirDados(data);
     })
     .catch((error) => {
+      console.log("Deu erro " + error);
       alert("não foi possivel concluir a solicitação")
     });
 }
