@@ -5,7 +5,7 @@ async function ObterCep() {
   let search = cep.value.replace("-", "")
 
   if (search.length > 8) {
-    alert("Quantidade de numeros Invalidos")
+    toggledivAlert();
     return;
   }
 
@@ -14,13 +14,15 @@ async function ObterCep() {
     .then((data) => {
 
       if (data.erro === true) {
-        alert("cep invalido")
+        toggledivInfo();
+        return; // para a execução para não preencher os dados
       }
       ExibirDados(data);
     })
     .catch((error) => {
       console.log("Deu erro " + error);
-      alert("não foi possivel concluir a solicitação")
+      toggleDiv();
+      return;
     });
 }
 
@@ -40,3 +42,20 @@ function ExibirDados(response) {
 
 }
 
+function toggleDiv() {
+  var show = document.getElementById("alert");
+  show.style.display = "block";
+
+}
+
+function toggledivAlert() {
+  var show = document.getElementById("alert2");
+  show.style.display = "block";
+
+}
+
+function toggledivInfo() {
+  var show = document.getElementById("alert3");
+  show.style.display = "block";
+
+}

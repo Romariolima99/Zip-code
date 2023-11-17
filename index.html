@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Consulta de cep</title>
+    <title>Consulte seu cep</title>
 </head>
 <body>
+    <!-- Alert de erro -->
+<div id="alert" class="alert">
+    <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Alerta! </strong> não foi possivel concluir a solicitação.
+</div>
+
+<!-- Alert de atenção -->
+<div id="alert2" class="alert2">
+    <span class="closebtn2" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Atenção! </strong> Quantidade de numeros Invalidos, digite um cep de 8 digitos.
+</div>
+
+  <!-- Alert de digitação -->
+<div id="alert3" class="alert3">
+    <span class="closebtn3" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Atenção! </strong> Quantidade de numeros Invalidos, digite um cep de 8 digitos valido.
+</div>
 
 <div class="container">
  <div class="itens">
-    <h1>Consulta de Cep</h1>
+    <h1>Digite seu cep</h1>
     <button class="btn-consultar" onclick ="ObterCep()"> Buscar </button>
     <input class="input-cep" type="text" id="cep" placeholder="cep" />
     <p id="logradouro">Logradouro:</p>
