@@ -12,7 +12,8 @@ async function ObterCep() {
   await fetch(`https://viacep.com.br/ws/${search}/json/`, options)
     .then((response) => response.json())
     .then((data) => {
-
+      toggledivSuccess(); //adição do sucees
+  
       if (data.erro === true) {
         toggledivInfo();
         return; // para a execução para não preencher os dados
@@ -56,6 +57,12 @@ function toggledivAlert() {
 
 function toggledivInfo() {
   var show = document.getElementById("alert3");
+  show.style.display = "block";
+
+}
+
+function toggledivSuccess() {
+  var show = document.getElementById("success");
   show.style.display = "block";
 
 }

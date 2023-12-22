@@ -19,7 +19,7 @@
 .itens{
 
     width: 30%;
-    height: 65%;
+    height: 90%;
     background-image: radial-gradient(circle at 50% -20.71%, #edf3ff 0, #b5c9f2 50%, #79a1e2 100%);
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgb(15, 14, 14), 6px 9px 15px rgb(16, 16, 16);
@@ -43,6 +43,7 @@
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #aade7c;
+  height: 10%;
 }
 .btn-consultar:hover {
 	background-color:#5cb811;
@@ -54,7 +55,7 @@
 
 .input-cep{
   width:40%;
-  height:30px;
+  height:10%;
   border-radius: 10px;
 }
 
@@ -129,6 +130,28 @@
   color: black;
 }
 
+.alert-success {
+  padding: 20px;
+  background-color: #04AA6D;
+  color: white;
+  display:none;
+}
+
+.closebtn-success {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-success:hover {
+  color: black;
+}
+
 @media(min-width:320px) and (max-width:900px) {
     .itens{
        width: 100%;
@@ -136,12 +159,6 @@
        font-size: 25px;
     }
  }
- /* @media(min-width:320px) and (max-width:900px) {
-     h1 {
-       font-size: 40px;
-    }
- } */
-
  @media(min-width:320px) and (max-width:900px) {
   .container{
     width: 100%;
@@ -151,17 +168,17 @@
 
  @media(min-width:320px) and (max-width:900px) {
   .alert {
-    width: 83%;
+    width: 90%;
 }
  }
 
  @media(min-width:320px) and (max-width:900px) {
    .alert2 {
-    width: 83%;
+    width: 90%;
 }
  }
 @media(min-width:320px) and (max-width:900px) {
    .alert3{
-    width: 83%;
+    width: 90%;
 }
 }
