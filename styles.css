@@ -35,7 +35,7 @@ body {
   object-fit: cover;
   margin-left: -60px;
   margin-right: 40px;
-  /* border-radius: inherit; */
+  border-radius: inherit;
 }
 
 .card h2 {
@@ -135,8 +135,10 @@ body {
   padding: 20px;
   background-color: #f44336;
   color: white;
-  position: absolute;
   display:none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .closebtn {
@@ -154,13 +156,16 @@ body {
   color: black;
 }
 
-.alert2 {
+.alert-attention {
   padding: 20px;
   background-color: #FFD700;
   color: white;
-  position: absolute;
   display:none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
+
 
 .closebtn2 {
   margin-left: 15px;
@@ -205,6 +210,9 @@ body {
   background-color: #04AA6D;
   color: white;
   display:none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .closebtn-success {
@@ -218,19 +226,24 @@ body {
   transition: 0.3s;
 }  
 
+.container{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
 
 
 .alert-success:hover {
   color: black;
 }
-
-@media(min-width:320px) and (max-width:900px) {
-    .itens{
-       width: 100%;
-       height: 50vh;
-       font-size: 25px;
-    }
- }
+.alert-attention:hover {
+  color: black;
+}
+.alert:hover {
+  color: black;
+}
  @media(min-width:320px) and (max-width:900px) {
   .container{
     width: 100%;
