@@ -32,17 +32,17 @@
     <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
   </div>
 
-<div class="container">
- <div class="itens">
-    <h1>DIGITE SEU CEP</h1>
-    <button class="btn-consultar" onclick ="ObterCep()"> Buscar </button>
-    <input class="input-cep" type="text" id="cep" placeholder="Digite seu cep" />
-    <p id="logradouro">Logradouro:</p>
-    <p id="bairro">Bairro:</p>
-    <p id="localidade">Localidade:</p>
-    <p id="ibge">Ibge:</p>
- </div>
-</div>
-
+<div class="card">
+    <img src="assets/search-animate.svg" />
+    <div>
+      <h2>Consultar Cep</h2>
+      <input class="input-cep" type="text" id="cep" placeholder="Digite seu cep" />
+      <p id="logradouro">Logradouro:</p>
+      <p id="bairro">Bairro:</p>
+      <p id="localidade">Localidade:</p>
+      <p id="ibge">Ibge:</p>
+      <button class="primary" onclick ="ObterCep()">Consultar</button>
+    </div>
+  </div>
 </body>
 </html>
