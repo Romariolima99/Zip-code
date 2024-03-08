@@ -131,7 +131,7 @@ body {
 
 /* Estilização dos botões  */
 
-.alert {
+.alert-error {
   padding: 20px;
   background-color: #f44336;
   color: white;
@@ -182,11 +182,10 @@ body {
   color: black;
 }
 
-.alert3 {
+.alert-success {
   padding: 20px;
   background-color: #1E90FF;
   color: white;
-  position: absolute;
   display: none;
 }
 
@@ -252,18 +251,18 @@ body {
  }
 
  @media(min-width:320px) and (max-width:900px) {
-  .alert {
+  .alert-error {
     width: 90%;
 }
  }
 
  @media(min-width:320px) and (max-width:900px) {
-   .alert2 {
+  .alert-attention {
     width: 90%;
 }
  }
 @media(min-width:320px) and (max-width:900px) {
-   .alert3{
+   .alert-success{
     width: 90%;
 }
 }
