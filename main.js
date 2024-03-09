@@ -12,12 +12,13 @@ async function ObterCep() {
   await fetch(`https://viacep.com.br/ws/${search}/json/`, options)
     .then((response) => response.json())
     .then((data) => {
-      toggledivSuccess(); //adição do sucees
-  
-      if (data.erro === true) {
-        toggledivInfo();
+     
+      if (data.erro === "true") {
+        toggleDiv(); 
+        console.log(data.erro);
         return; // para a execução para não preencher os dados
-      }
+      }  
+      toggledivSuccess(); //Adição do Success
       ExibirDados(data);
     })
     .catch((error) => {
