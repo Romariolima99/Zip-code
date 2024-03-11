@@ -9,7 +9,7 @@ html {
 }
 
 h2 {
-  padding: 10px;
+  padding: 15px;
 }
 
 body {
@@ -41,7 +41,6 @@ body {
   margin-right: 40px;
   border-radius: inherit;
 }
-
 
 
 .card h2 {
@@ -96,7 +95,7 @@ body {
   cursor: pointer;
 }
 
-@media (width <= 720px) {
+  @media (width <= 720px) {
   .card {
     margin: 0 40px;
     padding-left: 50px;
@@ -107,7 +106,7 @@ body {
   }
 
   .card h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .card img {
@@ -116,33 +115,10 @@ body {
     max-width: 1000px;
   }
 
-  .card .stats var {
-    min-width: 90px;
-  }
-
   .card button {
     min-width: 160px;
   }
 }
-
-.card .stats {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  margin: 0 0 24px;
-  padding: 0;
-}
-
-.card .stats var {
-  display: block;
-  font-style: normal;
-  font-size: 26px;
-}
-
-.card .stats label {
-  opacity: 0.5;
-}
-
 
 /* Estilização dos botões  */
 
