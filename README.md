@@ -20,7 +20,10 @@ A aplicação utiliza a API ViaCEP para realizar consultas de CEP. [[API ViaCEP]
 - Separação de responsabilidades entre HTML, CSS e JavaScript.
 - Utilização de design clean e intuitivo para melhor experiência do usuário.
 
-
+# Como clonar este repositório:
+```js
+    git clone https://github.com/Romariolima99/Zip-code
+ ```
 
 - Veja o Projeto: https://zip-code-romario.netlify.app/
 
