@@ -8,6 +8,10 @@ html {
   box-sizing: border-box;
 }
 
+h2 {
+  padding: 10px;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -29,9 +33,9 @@ body {
 }
 
 .card img {
-  max-width: 280px;
+  max-width: 260px;
   width: 32vw;
-  height: 270px;
+  height: 260px;
   object-fit: cover;
   margin-left: -60px;
   margin-right: 40px;
@@ -52,8 +56,8 @@ body {
 }
 
 .card p {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   color: rgb(0 0 0 / 70%);
   margin-bottom: 24px;
 }
@@ -72,6 +76,15 @@ body {
   font-size: 18px;
   border-radius: 6px;
   min-width: 120px;
+}
+
+.input-cep{
+  width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+
 }
 
 .card button.primary {
