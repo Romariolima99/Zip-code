@@ -5,7 +5,9 @@ async function ObterCep() {
   let search = cep.value.replace("-", "")
 
   if (search.length > 8) {
-    toggledivAlert();
+    toggledivAlert(), setTimeout(() => { 
+      hideDivAttention()
+    }, 3000); 
     return;
   }
 
@@ -14,16 +16,21 @@ async function ObterCep() {
     .then((data) => {
      
       if (data.erro === "true") {
-        toggleDiv(); 
-        console.log(data.erro);
+        toggleDivError(), setTimeout(() => { 
+          hideDivError()
+        }, 3000); 
         return; // para a execução para não preencher os dados
       }  
-      toggledivSuccess(); //Adição do Success
+      toggledivSuccess(), setTimeout(() => { 
+        hideDiv()
+      }, 3000); 
       ExibirDados(data);
     })
     .catch((error) => {
       console.log("Deu erro " + error);
-      toggleDiv();
+      toggleDivError(), setTimeout(() => { 
+        hideDivError()
+      }, 3000); 
       return;
     });
 }
@@ -44,20 +51,14 @@ function ExibirDados(response) {
 
 }
 
-function toggleDiv() {
+function toggleDivError() {
   var show = document.getElementById("alert");
   show.style.display = "block";
 
 }
 
 function toggledivAlert() {
-  var show = document.getElementById("alert2");
-  show.style.display = "block";
-
-}
-
-function toggledivInfo() {
-  var show = document.getElementById("alert3");
+  var show = document.getElementById("alert-Attention");
   show.style.display = "block";
 
 }
@@ -68,3 +69,22 @@ function toggledivSuccess() {
 
 }
 
+// Ocultar Divs
+
+function hideDiv ()  {
+  var hide = document.getElementById("success");
+  hide.style.display = "none";
+
+    }
+
+    function hideDivError ()  {
+      var hide = document.getElementById("alert");
+      hide.style.display = "none";
+    
+        }
+
+        function hideDivAttention ()  {
+          var hide = document.getElementById("alert-Attention");
+          hide.style.display = "none";
+        
+            }
