@@ -25,4 +25,4 @@ A aplicação utiliza a API ViaCEP para realizar consultas de CEP. [[API ViaCEP]
 - Veja o Projeto: https://zip-code-romario.netlify.app/
 
 
-<img src="https://i.imgur.com/f5AMu52.png" alt="GIF" data-canonical-src="https://i.imgur.com/f5AMu52.png" style="max-width: 50%;">
+<img src="https://i.imgur.com/paBHQlV.png" alt="GIF" data-canonical-src="https://i.imgur.com/paBHQlV.png" style="max-width: 50%;">
